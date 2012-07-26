@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="preferExternal"
+    package="de.magicclock"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/icon57"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        
+        <service
+            android:name=".LocationService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="de.magicclock.LocationService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".receiver.StartTrackingServiceAtBootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="StartTrackingServiceAtBootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="MagicClock"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

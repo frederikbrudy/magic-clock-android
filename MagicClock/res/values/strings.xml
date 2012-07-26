@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Magic Clock Tracker</string>
+    <string name="button_next">Weiter</string>
+    <string name="save">Speichern</string>
+    <string name="ok">OK</string>
+    <string name="delete">Löschen</string>
+    <string name="menu">Menü</string>
+    <string name="back">Zurück</string>
+    <string name="about_text">Claudius, Fabius, Felix, Frederik</string>
+    <string name="no">Nein</string>
+    <string name="yes">Ja</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="abort">Abbrechen</string>
+    <string name="internet_warning">Keine Netzwerverbindung verfügbar.\n\nEinstellungen aufrufen?</string>
+    <string name="internet_warning_title">Kein Internet</string>
+    <string name="location_warning">Keine Ortsinformationen verfügbar.\n\nEinstellungen aufrufen?</string>
+    <string name="location_warning_title">Keine Ortsinformationen</string>
+    <string name="app_first_start_title">Willkommen</string>
+    <string name="app_first_start">Willkommen bei The Magic Clock. Bitte Farbe wählen und beim Server registrieren.</string>
+    <string name="save_id_title">ID sichern?</string>
+    <string name="save_id_text">Wirklich mit der angegebenen ID beim Server registrieren?</string>
+    <string name="tracking">Tracking</string>
+    <string name="latitude">Latitude: </string>
+    <string name="longitude">Longitude: </string>
+    <string name="notification_content_title">Magic Clock Location Tracker</string>
+    <string name="notification_content_text">Waiting for first location update...</string>
+    <string name="notification_content_text_fake">Sending fake location to server...</string>
+    <string name="notification_ticker_text">Location Monitor started. You can now leave the App.</string>
+    <string name="notification_last_updated">Last updated: </string>
+    <string name="notification_fake">Fake location sent: </string>
+    
+    <string name="server_api">http://www.example.com</string>
+    <string name="server_api_url">SERVER_URL/rest/updateLocation?key=USERID&amp;lon=LONGITUDE&amp;lat=LATITUDE</string>
+    <string name="server_api_url_fake">SERVER_URL/rest/updateLocation?key=USERID&amp;location=LOCATION</string>
+    <string name="server_api_url_server">SERVER_URL</string>
+    <string name="server_api_url_userid">USERID</string>
+    <string name="server_api_url_lon">LONGITUDE</string>
+    <string name="server_api_url_lat">LATITUDE</string>
+    <string name="server_api_url_loc">LOCATION</string>
+    
+    
+    
+
+</resources>
